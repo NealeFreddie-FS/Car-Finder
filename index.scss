@@ -1,0 +1,107 @@
+$font-primary: "Open Sans", sans-serif;
+$color-primary-header: #ffffff;
+$color-subtext: #d3d3d3;
+$color-form-bg: #f2f2f2;
+$color-form-blue: #348fbc;
+$color-form-disabled: #909090;
+$color-selected-option: #212121;
+
+body {
+  font-family: $font-primary;
+  background: url("./background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: $color-primary-header;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.description {
+  color: $color-subtext;
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+select {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: $color-primary-header;
+  cursor: pointer;
+  flex: 1;
+  text-align: left;
+}
+
+select:disabled {
+  background: $color-form-disabled;
+  cursor: not-allowed;
+}
+
+.car-details {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: $color-form-bg;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.car-details h2 {
+  color: $color-selected-option;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.car-details p {
+  margin: 0.5rem 0;
+  color: $color-selected-option;
+  text-align: left;
+}
